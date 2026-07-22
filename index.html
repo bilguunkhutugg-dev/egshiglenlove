@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>uuchlaarai 💗</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- arrow marker defs (used by all curved arrows) -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <marker id="ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#e63970"/>
+    </marker>
+  </defs>
+</svg>
+
+<!-- PASSCODE GATE -->
+<div id="passcode-screen">
+  <div class="heartfall"></div>
+  <div class="lock-card">
+    <div class="lock-emoji">🔒💗</div>
+    <h1>a little something for you</h1>
+    <p class="sub">enter the passcode to open my letter...</p>
+    <input id="passcodeInput" type="tel" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off">
+    <div id="errorMsg"></div>
+    <button id="unlockBtn">unlock 💗</button>
+    <button id="hintBtn">need a hint?</button>
+    <div id="hintText">hint: a date that means something to us... 🗓️ (MMDD)</div>
+  </div>
+</div>
+
+<!-- SLIDESHOW DECK -->
+<div id="deck" class="hidden">
+  <div class="progress-seal">page <span id="pageNum"></span> / <span id="pageTotal"></span></div>
+  <div id="slides"></div>
+  <button id="prevBtn" class="nav-btn prev" aria-label="previous">&#8249;</button>
+  <button id="nextBtn" class="nav-btn next" aria-label="next">&#8250;</button>
+</div>
+
+<div id="ambientHearts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
